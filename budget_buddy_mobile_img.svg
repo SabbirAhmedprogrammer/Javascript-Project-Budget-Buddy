@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="280px" height="280px" viewBox="0 0 280 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="382px" height="280px" viewBox="0 0 382 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>Oval Copy 2 + Oval Copy 11 + Oval Copy 10 + Oval Copy 12 + Oval Copy 3 + Oval Copy 13 Mask Copy 3</title>
+    <title>Oval Copy 2 + Oval Copy 11 + Oval Copy 10 + Oval Copy 12 + Oval Copy 3 + Oval Copy 13 Mask Copy 4</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <path d="M12,0 L268,0 C274.627417,-1.21743675e-15 280,5.372583 280,12 L280,228.860215 C280,235.487632 274.627417,240.860215 268,240.860215 L0,240.860215 L0,240.860215 L0,12 C-8.11624501e-16,5.372583 5.372583,1.21743675e-15 12,0 Z" id="path-1"></path>
+        <path d="M12,4.26325641e-14 L370,4.26325641e-14 C376.627417,4.31914842e-14 382,5.372583 382,12 L382,228.860215 C382,235.487632 376.627417,240.860215 370,240.860215 L0,240.860215 L0,240.860215 L0,12 C-8.11624501e-16,5.372583 5.372583,4.56263577e-14 12,4.26325641e-14 Z" id="path-1"></path>
     </defs>
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Oval-Copy-2-+-Oval-Copy-11-+-Oval-Copy-10-+-Oval-Copy-12-+-Oval-Copy-3-+-Oval-Copy-13-Mask-Copy-3">
-            <polygon id="Path" fill-opacity="0.96" fill="#235790" points="40.0425985 239.856631 -3.62376795e-13 280 -3.62376795e-13 239.856631"></polygon>
+        <g id="Oval-Copy-2-+-Oval-Copy-11-+-Oval-Copy-10-+-Oval-Copy-12-+-Oval-Copy-3-+-Oval-Copy-13-Mask-Copy-4">
+            <polygon id="Path" fill-opacity="0.93" fill="#235790" points="40.0425985 239.856631 -3.62376795e-13 280 -3.62376795e-13 239.856631"></polygon>
             <g id="Oval-Copy-2-+-Oval-Copy-11-+-Oval-Copy-10-+-Oval-Copy-12-+-Oval-Copy-3-+-Oval-Copy-13-Mask">
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
-                <use id="Mask" fill="#235790" transform="translate(140.000000, 120.430108) rotate(-360.000000) translate(-140.000000, -120.430108) " xlink:href="#path-1"></use>
-                <circle id="Oval-Copy-2" stroke="#6784A5" mask="url(#mask-2)" cx="291" cy="10" r="149.5"></circle>
+                <use id="Mask" fill="#235790" transform="translate(191.000000, 120.430108) rotate(-360.000000) translate(-191.000000, -120.430108) " xlink:href="#path-1"></use>
+                <circle id="Oval-Copy-2" stroke="#6784A5" mask="url(#mask-2)" cx="406" cy="10" r="149.5"></circle>
                 <circle id="Oval-Copy-11" stroke="#6784A5" mask="url(#mask-2)" transform="translate(-83.500000, 427.500000) rotate(-270.000000) translate(83.500000, -427.500000) " cx="-83.5" cy="427.5" r="284"></circle>
-                <circle id="Oval-Copy-10" stroke="#85A3C5" mask="url(#mask-2)" cx="337.5" cy="0.5" r="197"></circle>
+                <circle id="Oval-Copy-10" stroke="#85A3C5" mask="url(#mask-2)" cx="452.5" cy="0.5" r="197"></circle>
                 <circle id="Oval-Copy-12" stroke="#85A3C5" mask="url(#mask-2)" transform="translate(-65.500000, 515.500000) rotate(-270.000000) translate(65.500000, -515.500000) " cx="-65.5" cy="515.5" r="374"></circle>
-                <circle id="Oval-Copy-3" fill-opacity="0.4" fill="#6784A5" mask="url(#mask-2)" cx="277" cy="-11" r="136"></circle>
-                <path d="M-44,143 C38.0481583,143 111.150976,181.299557 158.405733,240.995953 L0,241 L0,356 L210.088886,355.9986 C212.659398,370.612158 214,385.649522 214,401 C214,543.489465 98.4894654,659 -44,659 C-186.489465,659 -302,543.489465 -302,401 C-302,258.510535 -186.489465,143 -44,143 Z" id="Combined-Shape" fill-opacity="0.25" fill="#6784A5" mask="url(#mask-2)"></path>
+                <circle id="Oval-Copy-3" fill-opacity="0.4" fill="#6784A5" mask="url(#mask-2)" cx="392" cy="-11" r="136"></circle>
+                <path d="M-44,143 C27.2447327,143 91.7447327,171.877634 138.43355,218.56645 C145.514487,225.647388 152.185741,233.138009 158.408706,240.999709 L0,241 L0,356 L210.089125,355.999962 C212.659481,370.613092 214,385.649998 214,401 C214,543.489465 98.4894654,659 -44,659 C-186.489465,659 -302,543.489465 -302,401 C-302,258.510535 -186.489465,143 -44,143 Z" id="Combined-Shape" fill-opacity="0.25" fill="#6784A5" mask="url(#mask-2)"></path>
             </g>
         </g>
     </g>
