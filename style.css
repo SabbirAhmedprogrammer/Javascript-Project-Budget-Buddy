@@ -1,13 +1,18 @@
+/* Global Resets */
+body ul {
+    padding: 0;
+    margin: 0;
+}
 
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #F5F8FA;
+}
 
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-body {
-    font-family: 'Nunito', sans-serif;
 }
 
 .main-display {
@@ -23,28 +28,92 @@ body {
     color: blue;
 }
 
+.weekly-budget {
+    font-size: 1.5rem;
+    color: #EAF0F6;
+}
+
+.available-balance {
+    font-size: 1.5rem;
+    color: #EAF0F6;
+    margin-top: 30px;
+}
+
+.balance-amount {
+    font-size: 3.75rem;
+    color: #EAF0F6;
+}
+
 .form-container {
 display: flex;
 justify-content: center;
+border-radius: 12px;
+border: black:
 }
 
 .form-main {
 display: flex;
 flex-direction: column;
+background-color: white;
+padding: 30px;
+border-radius: 12px;
+width: 480px;
+
+}
+
+.form-heading {
+    font-size: 1.5rem;
+    color: #235790;
+    margin: 0 0 24px 0;
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #33475B;
+    margin-bottom: 6px;
+}
+
+.input {
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+ 
+.select {
+    padding: 12px;
+    font-size: 1rem;
+    color: #33475B;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.submit {
+    background-color: #FF7A59;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
 }
 
 .main-expense {
-    width: 100%;
-margin: auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spend-heading {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .expenses {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-size: 1.5rem;
+    justify-self: start;
+    font-size: 1rem;
+    list-style: none;
+    margin-top: 10px;
 }
