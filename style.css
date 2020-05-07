@@ -23,6 +23,16 @@ body {
     color: blue;
 }
 
+.form-container {
+display: flex;
+justify-content: center;
+}
+
+.form-main {
+display: flex;
+flex-direction: column;
+}
+
 .main-expense {
     width: 100%;
 margin: auto;
