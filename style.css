@@ -16,12 +16,7 @@ body {
 }
 
 .main-display {
-    background-image:url(budget_buddy_img.svg);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-     /* Resize the background image to cover the entire container */
-     /* background-repeat: no-repeat; */
-    background-size: contain;
+    position: relative;
     border: 5px;
     display: flex;
     align-items: center;
@@ -29,24 +24,44 @@ body {
     font-size: 3rem;
     color: blue;
     min-height:280px;
-    
-    
+    justify-content: center;
+}
+
+.bg-image {
+    position: absolute;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+     /* Resize the background image to cover the entire container */
+     /* background-repeat: no-repeat; */
+    background-size: contain;
+    z-index: 1;    
+}
+
+.desktop-image{
+    display:none;
 }
 
 .weekly-budget {
+    position: relative;
     font-size: 1.5rem;
     color: #EAF0F6;
+    z-index: 2; 
 }
 
 .available-balance {
+    position: relative;
     font-size: 1.5rem;
     color: #EAF0F6;
     margin-top: 30px;
+    z-index: 2; 
 }
 
 .balance-amount {
+    position: relative;
     font-size: 3.75rem;
     color: #EAF0F6;
+    z-index: 2; 
+    margin-bottom: 30px;
 }
 
 .form-container {
@@ -136,3 +151,25 @@ width: 480px;
     color:#516f90;
     margin-bottom:10px;
 }
+
+
+@media only screen and (min-width: 768px) {
+    .desktop-image{
+    display: initial;
+    }
+
+    .mobile-image {
+        display: none;
+    }
+
+    .expenses {
+        display: flex;
+        flex-wrap: wrap;
+       
+
+    }
+
+    .categories {
+        width: 50%;
+    }
+  }
