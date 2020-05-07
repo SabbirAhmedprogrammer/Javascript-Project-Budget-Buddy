@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="940px" height="280px" viewBox="0 0 940 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Oval Copy 2 + Oval Copy 11 + Oval Copy 10 + Oval Copy 12 + Oval Copy 3 + Oval Copy 13 Mask Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2.65577168e-14,12 C2.73693413e-14,5.372583 5.372583,-1.11153498e-13 12,-1.10747685e-13 L928,1.13607608e-13 C934.627417,1.1401342e-13 940,5.372583 940,12 L940,228.860215 C940,235.487632 934.627417,240.860215 928,240.860215 L39.041,240.86 L0,280 L2.65577168e-14,12 Z" id="path-1"></path>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Oval-Copy-2-+-Oval-Copy-11-+-Oval-Copy-10-+-Oval-Copy-12-+-Oval-Copy-3-+-Oval-Copy-13-Mask-Copy-3">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#235790" xlink:href="#path-1"></use>
+            <circle id="Oval-Copy-2" stroke="#6784A5" mask="url(#mask-2)" cx="891" cy="26" r="149.5"></circle>
+            <circle id="Oval-Copy-11" stroke="#6784A5" mask="url(#mask-2)" transform="translate(243.500000, 394.500000) rotate(-270.000000) translate(-243.500000, -394.500000) " cx="243.5" cy="394.5" r="284"></circle>
+            <circle id="Oval-Copy-10" stroke="#85A3C5" mask="url(#mask-2)" cx="937.5" cy="16.5" r="197"></circle>
+            <circle id="Oval-Copy-12" stroke="#85A3C5" mask="url(#mask-2)" transform="translate(261.500000, 482.500000) rotate(-270.000000) translate(-261.500000, -482.500000) " cx="261.5" cy="482.5" r="374"></circle>
+            <circle id="Oval-Copy-3" fill-opacity="0.15" fill="#6784A5" mask="url(#mask-2)" cx="877" cy="5" r="136"></circle>
+            <path d="M333.712905,620.507653 L232.287095,620.507653 C248.683077,623.782346 265.640947,625.5 283,625.5 C300.359053,625.5 317.316923,623.782346 333.712905,620.507653 Z M39.4933176,284.053986 C30.4243776,310.365768 25.5,338.607809 25.5,368 C25.5,397.392191 30.4243776,425.634232 39.4933176,451.946014 L39.4933176,284.053986 Z M283,110.5 C235.979612,110.5 191.902729,123.102761 153.963188,145.114978 C114.91641,167.769606 82.3703205,200.390598 59.8064382,239.496448 L506.193562,239.496448 C483.62968,200.390598 451.08359,167.769606 412.036812,145.114978 C374.097271,123.102761 330.020388,110.5 283,110.5 Z" id="Combined-Shape" stroke="#235790" fill-opacity="0.15" fill="#6784A5" mask="url(#mask-2)"></path>
+            <rect id="Rectangle" fill="#D8D8D8" mask="url(#mask-2)" x="40" y="241" width="676" height="503"></rect>
+        </g>
+    </g>
+</svg>
