@@ -49,6 +49,7 @@ body {
     display:none;
 }
 
+
 .weekly-budget {
     position: relative;
     font-size: 1.5rem;
@@ -72,8 +73,8 @@ body {
     margin-bottom: 60px;
 }
 
-.form-container {
-    position: relative;
+.form-container, .budget-form {
+position: relative;
 display: flex;
 justify-content: center;
 border-radius: 12px;
@@ -83,7 +84,7 @@ spans the whole page and doesn't look nice */
 /* border: black: */
 }
 
-.form-main {
+.form-main, .budget-form {
 /* position: absolute; */
 display: flex;
 flex-direction: column;
@@ -92,6 +93,10 @@ padding: 30px;
 border-radius: 12px;
 width: 480px;
 z-index: 3;
+}
+
+.enter-expense {
+    display: none;
 }
 
 .form-heading {

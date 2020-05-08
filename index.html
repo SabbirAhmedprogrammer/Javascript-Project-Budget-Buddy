@@ -22,9 +22,6 @@
                     <img class="mobile-image" src="./budget_buddy_mobile_img.svg" alt="">
                     <img class="desktop-image" src="./budget_buddy_img.svg" alt="">
                 </div>
-                <!-- keep content in container add second container
-                second container will be abs. position z index-1 -->
-                <!-- <img src="./assets/budget_buddy_img.svg" alt=""> -->
                 <div class="weekly-budget">
                     Weekly Budget: $1000
                 </div>
@@ -38,12 +35,16 @@
 
         </div>
         <div>
-            <form class="form-container">
+            <form class="form-container budget">
                 <div class="form-main">
                     <h3 class="form-heading">Add Weekly Budget</h3>
-                    <label class="form-label" for="text1">Weekly Budget</label>
-                    <input class="input" type="text" id="text1" name="text1" />
-
+                    <label class="form-label" for="amount">Weekly Budget</label>
+                    <input class="input" type="text" id="amount" name="amount" />
+                    <button class="submit" type="submit">Submit</button>
+                </div>
+            </form>
+            <form class="form-container enter-expense">
+                <div class="form-main">
                     <h3 class="form-heading">Enter Expense</h3>
                     <label class="form-label" for="select1">Category</label>
                     <select class="select" name="select1" id="select1">
@@ -57,8 +58,6 @@
                     <label class="form-label" for="text1">Add Expense</label>
                     <input class="input" type="text" id="text1" name="text1" />
                     <button class="submit" type="submit">Submit</button>
-                    <!-- Reset Button -->
-                    <!-- <button type="Reset">Reset</button> -->
                 </div>
             </form>
         </div>
