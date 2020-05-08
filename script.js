@@ -15,16 +15,14 @@ let foodAmount = 0;
 let clothingAmount = 0;
 let billsAmount = 0;
 let totalSpend = (entertainmentAmount + foodAmount + clothingAmount + billsAmount);
-let test = 20;
-console.log(test)
 
 
 //innertext updates
-entertainment.innerText = `Entertainment:$${entertainmentAmount}`;
-bills.innerText = `Bills:$${billsAmount}`;
-clothing.innerText = `Clothing:$${clothingAmount}`;
-food.innerText = `Food:$${foodAmount}`;
-spentAmount.innerText = `Total Spent:$${totalSpend}`;
+entertainment.innerText = `Entertainment: $${entertainmentAmount.toFixed(2)}`;
+bills.innerText = `Bills: $${billsAmount.toFixed(2)}`;
+clothing.innerText = `Clothing: $${clothingAmount.toFixed(2)}`;
+food.innerText = `Food: $${foodAmount.toFixed(2)}`;
+spentAmount.innerText = `Total Spent: $${totalSpend.toFixed(2)}`;
 console.log(totalSpend)
 
 
@@ -85,7 +83,8 @@ enterExpense.addEventListener("submit", (event) => {
     } else {
         console.log("hello")
     }
-
+    let totalSpend = (entertainmentAmount + foodAmount + clothingAmount + billsAmount);
+    spentAmount.innerText = `Total Spent: $${totalSpend.toFixed(2)}`;
 });
 
 
