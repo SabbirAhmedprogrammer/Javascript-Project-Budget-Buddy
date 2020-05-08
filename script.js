@@ -8,6 +8,7 @@ let bills = document.querySelector(".listBills");
 let clothing = document.querySelector(".listClothing");
 let food = document.querySelector(".listFood");
 let spentAmount = document.querySelector(".spend-heading");
+let alertbox = document.querySelector(".alert-container");
 
 
 let entertainmentAmount = 0;
@@ -72,7 +73,10 @@ enterExpense.addEventListener("submit", (event) => {
     console.log(select);
     console.log(input);
     enterExpense.reset();
-    if (foodValue === select) {
+    if (input > availableBalanceTotal) {
+        alertbox.style.display = "flex";
+    }
+    else if (foodValue === select) {
         foodAmount += input;
         food.innerText = `Food: $${foodAmount.toFixed(2)}`;
     } else if (clothingValue === select) {
@@ -84,12 +88,12 @@ enterExpense.addEventListener("submit", (event) => {
     } else {
         billsAmount += input;
         bills.innerText = `Bills: $${billsAmount.toFixed(2)}`
-    }
+    };
 
     totalSpend += input;
-    spentAmount.innerText = totalSpend;
+    spentAmount.innerText = `Spent Amount: $${totalSpend.toFixed(2)}`;
     availableBalanceTotal -= input;
-    availableBalance.innerText = availableBalanceTotal;
+    availableBalance.innerText = `$${availableBalanceTotal.toFixed(2)}`;
 
 });
 
