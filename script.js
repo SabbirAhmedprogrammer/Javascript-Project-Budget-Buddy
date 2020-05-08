@@ -1,6 +1,8 @@
 let weeklyBudget = document.querySelector(".weekly-budget")
 let budget = document.querySelector(".budget")
 let availableBalance = document.querySelector(".balance-amount")
+let enterExpense = document.querySelector(".enter-expense");
+// availableBalance.innerText= 
 
 budget.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -10,4 +12,8 @@ budget.addEventListener("submit", (event) => {
     weeklyBudget.innerText = `Weekly Budget: $${amount}`;
     availableBalance.innerText = `$${amount}`;
 
+    budget.style.display = "none";
+    enterExpense.style.display = "flex";
+
 })
+
