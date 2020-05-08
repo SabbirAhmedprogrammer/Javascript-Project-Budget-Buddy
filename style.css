@@ -9,6 +9,13 @@ body {
     background-color: #F5F8FA;
 }
 
+.h1 {
+    border-color: #33475B;
+    border-width: 2px 0 2px 1px;
+    border-style:solid;
+    padding: 8px 0 8px 5px;
+}
+
 .header {
     display: flex;
     /* justify-content: center; */
@@ -70,7 +77,10 @@ body {
 display: flex;
 justify-content: center;
 border-radius: 12px;
-border: black:
+/* border needs to have size and style, so 2px solid black for example. This didn't
+have a semicolon at the end so it was not being used anyways. It puts a border that 
+spans the whole page and doesn't look nice */
+/* border: black: */
 }
 
 .form-main {
@@ -155,6 +165,13 @@ z-index: 3;
     margin-bottom:10px;
 }
 
+.icon {
+    color:#235790;
+}
+
+.fa-coins {
+    font-size:30px;
+}
 
 @media only screen and (min-width: 768px) {
     .desktop-image{
@@ -182,3 +199,4 @@ z-index: 3;
         width: 50%;
     }
   }
+
