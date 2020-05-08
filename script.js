@@ -8,6 +8,7 @@ let bills = document.querySelector(".listBills");
 let clothing = document.querySelector(".listClothing");
 let food = document.querySelector(".listFood");
 
+
 let entertainmentAmount = 0;
 let foodAmount = 0;
 let clothingAmount = 0;
@@ -19,6 +20,15 @@ entertainment.innerText = `Entertainment:$${entertainmentAmount}`;
 bills.innerText = `Bills:$${billsAmount}`;
 clothing.innerText = `Clothing:$${clothingAmount}`;
 food.innerText = `Food:$${foodAmount}`;
+
+
+
+let foodSelect = document.querySelector(".select-food");
+let clothingSelect = document.querySelector(".select-clothing");
+let billsSelect = document.querySelector(".select-bills");
+let entSelect = document.querySelector(".select-ent");
+
+
 
 
 
@@ -35,6 +45,15 @@ budget.addEventListener("submit", (event) => {
     enterExpense.style.display = "flex";
 })
 
+let foodValue = foodSelect.getAttribute("value");
+let clothingValue = clothingSelect.getAttribute("value");
+let billsValue = billsSelect.getAttribute("value");
+let entValue = entSelect.getAttribute("value");
+console.log(foodValue)
+console.log(clothingValue)
+console.log(billsValue)
+console.log(entValue)
+
 //second form
 
 enterExpense.addEventListener("submit", (event) => {
@@ -45,8 +64,25 @@ enterExpense.addEventListener("submit", (event) => {
     console.log(select);
     console.log(input);
     enterExpense.reset();
+    if (foodValue === select) {
+        foodAmount += input;
+        food.innerText = `Food: $${foodAmount.toFixed(2)}`;
+    } else if (clothingValue === select) {
+        clothingAmount += input;
+        clothing.innerText = `Clothing: $${clothingAmount.toFixed(2)}`;
+    } else if (entValue === select) {
+        entertainmentAmount += input;
+        entertainment.innerText = `Entertainment: $${entertainmentAmount.toFixed(2)}`;
+    } else if (billsValue === select) {
+        billsAmount += input;
+        bills.innerText = `Bills: $${billsAmount.toFixed(2)}`
+    } else {
+        console.log("hello")
+    }
 
-})
+});
+
+
 
 //if entertainment is selected, .categories.innertext= ""
 
