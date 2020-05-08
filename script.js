@@ -7,19 +7,25 @@ let entertainment = document.querySelector(".listEntertainment");
 let bills = document.querySelector(".listBills");
 let clothing = document.querySelector(".listClothing");
 let food = document.querySelector(".listFood");
+let spentAmount = document.querySelector(".spend-heading");
 
 
 let entertainmentAmount = 0;
 let foodAmount = 0;
 let clothingAmount = 0;
 let billsAmount = 0;
-let totalSpend = (entertainment + food + clothing + bills);
+let totalSpend = (entertainmentAmount + foodAmount + clothingAmount + billsAmount);
+let test = 20;
+console.log(test)
+
 
 //innertext updates
 entertainment.innerText = `Entertainment:$${entertainmentAmount}`;
 bills.innerText = `Bills:$${billsAmount}`;
 clothing.innerText = `Clothing:$${clothingAmount}`;
 food.innerText = `Food:$${foodAmount}`;
+spentAmount.innerText = `Total Spent:$${totalSpend}`;
+console.log(totalSpend)
 
 
 
