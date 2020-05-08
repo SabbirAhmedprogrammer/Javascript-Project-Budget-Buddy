@@ -14,7 +14,10 @@ let entertainmentAmount = 0;
 let foodAmount = 0;
 let clothingAmount = 0;
 let billsAmount = 0;
-let totalSpend = (entertainmentAmount + foodAmount + clothingAmount + billsAmount);
+// let totalSpend = (entertainmentAmount + foodAmount + clothingAmount + billsAmount);
+
+let totalSpend = 0;
+let availableBalanceTotal = 0;
 
 
 //innertext updates
@@ -34,8 +37,6 @@ let entSelect = document.querySelector(".select-ent");
 
 
 
-
-
 //first form
 budget.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -43,11 +44,14 @@ budget.addEventListener("submit", (event) => {
     let amount = Number(data.get("amount"));
     // console.log(amount)
     weeklyBudget.innerText = `Weekly Budget: $${amount.toFixed(2)}`;
+    availableBalanceTotal = amount;
     availableBalance.innerText = `$${amount.toFixed(2)}`;
 
     budget.style.display = "none";
     enterExpense.style.display = "flex";
 })
+
+
 
 let foodValue = foodSelect.getAttribute("value");
 let clothingValue = clothingSelect.getAttribute("value");
@@ -77,15 +81,18 @@ enterExpense.addEventListener("submit", (event) => {
     } else if (entValue === select) {
         entertainmentAmount += input;
         entertainment.innerText = `Entertainment: $${entertainmentAmount.toFixed(2)}`;
-    } else if (billsValue === select) {
+    } else {
         billsAmount += input;
         bills.innerText = `Bills: $${billsAmount.toFixed(2)}`
-    } else {
-        console.log("hello")
     }
-    let totalSpend = (entertainmentAmount + foodAmount + clothingAmount + billsAmount);
-    spentAmount.innerText = `Total Spent: $${totalSpend.toFixed(2)}`;
+
+    totalSpend += input;
+    spentAmount.innerText = totalSpend;
+    availableBalanceTotal -= input;
+    availableBalance.innerText = availableBalanceTotal;
+
 });
+
 
 
 

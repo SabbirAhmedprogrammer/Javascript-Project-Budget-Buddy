@@ -9,6 +9,26 @@ body {
     background-color: #F5F8FA;
 }
 
+.alert-container {
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    right:0;
+    width: 100%;
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.alert {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+}
+
 .h1 {
     border-color: #33475B;
     border-width: 2px 0 2px 1px;
@@ -179,6 +199,8 @@ z-index: 3;
     font-size:30px;
 }
 
+
+
 @media only screen and (min-width: 768px) {
     .desktop-image{
     display: initial;
@@ -205,4 +227,6 @@ z-index: 3;
         width: 50%;
     }
   }
+
+
 
