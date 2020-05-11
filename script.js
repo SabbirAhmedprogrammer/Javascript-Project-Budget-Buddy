@@ -74,7 +74,8 @@ enterExpense.addEventListener("submit", (event) => {
     console.log(input);
     enterExpense.reset();
     if (input > availableBalanceTotal) {
-        alertbox.style.display = "flex";
+        // added return to stop function from running
+        return alertbox.style.display = "flex";
     }
     else if (foodValue === select) {
         foodAmount += input;
@@ -95,6 +96,13 @@ enterExpense.addEventListener("submit", (event) => {
     availableBalanceTotal -= input;
     availableBalance.innerText = `$${availableBalanceTotal.toFixed(2)}`;
 
+});
+
+// added alert stuff
+// alert
+let alertX = document.querySelector(".delete");
+alertX.addEventListener("click", () => {
+    alertbox.style.display = "none";
 });
 
 
