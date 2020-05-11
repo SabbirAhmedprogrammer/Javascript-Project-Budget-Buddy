@@ -22,10 +22,10 @@ let availableBalanceTotal = 0;
 
 
 //innertext updates
-entertainment.innerText = `Entertainment: $${entertainmentAmount.toFixed(2)}`;
-bills.innerText = `Bills: $${billsAmount.toFixed(2)}`;
-clothing.innerText = `Clothing: $${clothingAmount.toFixed(2)}`;
-food.innerText = `Food: $${foodAmount.toFixed(2)}`;
+entertainment.innerHTML = `<span class="fas fa-dice icon"></span>Entertainment: $${entertainmentAmount.toFixed(2)}`;
+bills.innerHTML = `<span class="fas fa-file-invoice-dollar icon"></span>Bills: $${billsAmount.toFixed(2)}`;
+clothing.innerHTML = `<span class="fas fa-tshirt icon"></span>Clothing: $${clothingAmount.toFixed(2)}`;
+food.innerHTML = `<span class="fas fa-utensils icon"></span>Food: $${foodAmount.toFixed(2)}`;
 spentAmount.innerText = `Total Spent: $${totalSpend.toFixed(2)}`;
 console.log(totalSpend)
 
@@ -79,16 +79,16 @@ enterExpense.addEventListener("submit", (event) => {
     }
     else if (foodValue === select) {
         foodAmount += input;
-        food.innerText = `Food: $${foodAmount.toFixed(2)}`;
+        food.innerHTML = `<span class="fas fa-utensils icon"></span>Food: $${foodAmount.toFixed(2)}`;
     } else if (clothingValue === select) {
         clothingAmount += input;
-        clothing.innerText = `Clothing: $${clothingAmount.toFixed(2)}`;
+        clothing.innerHTML = `<span class="fas fa-tshirt icon"></span>Clothing: $${clothingAmount.toFixed(2)}`;
     } else if (entValue === select) {
         entertainmentAmount += input;
-        entertainment.innerText = `Entertainment: $${entertainmentAmount.toFixed(2)}`;
+        entertainment.innerHTML = `<span class="fas fa-dice icon"></span>Entertainment: $${entertainmentAmount.toFixed(2)}`;
     } else {
         billsAmount += input;
-        bills.innerText = `Bills: $${billsAmount.toFixed(2)}`
+        bills.innerHTML = `<span class="fas fa-file-invoice-dollar icon"></span>Bills: $${billsAmount.toFixed(2)}`
     };
 
     totalSpend += input;
@@ -108,9 +108,9 @@ alertX.addEventListener("click", () => {
 
 
 
-//if entertainment is selected, .categories.innertext= ""
+//innerText changing example with template literal
 
-
-//         let amount = Number(event.target.getAttribute("data-amount"));
-//         console.log(amount);
-//         currentTotal += amount;
+// bills.innerText = `Bills: $${billsAmount.toFixed(2)}`;
+// clothing.innerText = `Clothing: $${clothingAmount.toFixed(2)}`;
+// food.innerText = `Food: $${foodAmount.toFixed(2)}`;
+// spentAmount.innerText = `Total Spent: $${totalSpend.toFixed(2)}`;
