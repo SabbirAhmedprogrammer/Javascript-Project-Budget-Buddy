@@ -23,7 +23,15 @@ body {
     z-index: 4;
 }
 
-/* styled the box a little bit */
+.grey-background {
+    position:absolute;
+    height:320px;
+    width:100%;
+    background-color: #eaf0f6;
+    top:290px;
+    z-index:-1;
+
+}
 
 .alert {
     background-color: rgb(194, 0, 0);
@@ -159,6 +167,12 @@ z-index: 3;
     border-radius: 6px;
     font-size: 1rem;
     margin-bottom: 40px;
+    background-color: #F5F8FA;
+    outline:none;
+}
+
+.input:focus{
+    border-color:#235790;
 }
  
 .select {
@@ -168,6 +182,12 @@ z-index: 3;
     height: 40px;
     margin-bottom: 30px;
     border-radius:6px;
+    background-color: #F5F8FA;
+    outline:none;
+}
+
+.select:focus{
+    border-color:#235790;
 }
 
 .submit {
@@ -189,12 +209,13 @@ z-index: 3;
     font-size: 1rem;
     display:flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 40px;
     font-weight:600;
     font-size: 1.5rem;
     color: #235790;
     width:480px;
 }
+
 
 .expenses {
     /* display: flex;
